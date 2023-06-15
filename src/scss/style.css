@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #252525;
+  --secondary-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.lil-gui {
+  display: none !important;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+nav .logo-container {
+  padding-left: 2em;
+}
+nav .logo-container .logo {
+  width: 20em;
+}
+nav .name-container {
+  padding-right: 2em;
+}
+nav .name-container .name {
+  font-size: 2em;
+  color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  width: 100vw;
+}
+main .helper {
+  display: none;
+  position: absolute;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  width: 50%;
+  height: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+main .helper .helper-element {
+  height: 80%;
+  width: 15%;
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+main .helper .helper-element svg {
+  fill: var(--primary-color);
+}
+main .helper .helper-element p {
+  color: var(--primary-color);
+}
+main .helper .helper-wheel svg {
+  height: 30%;
+}
+main .webgl {
+  height: 100%;
+  width: 90%;
+  outline: none;
+}
+main .side {
+  width: 10%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .side .settings-container {
+  height: 100%;
+  width: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+main .side .settings-container .setting {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+main .side .settings-container .setting svg {
+  height: 2.3em;
+  width: 2.3em;
+  fill: var(--primary-color);
+}/*# sourceMappingURL=style.css.map */

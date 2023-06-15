@@ -1,0 +1,134 @@
+@import "_roots.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow: hidden;
+    // font-family: "Bitter", serif;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.lil-gui {
+    display: none !important;
+}
+
+/* Nav */
+nav {
+    // position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    .logo-container {
+        padding-left: 2em;
+        .logo {
+            width: 20em;
+        }
+    }
+    .name-container {
+        padding-right: 2em;
+        .name {
+            font-size: 2em;
+            color: var(--primary-color);
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 100vw;
+
+    .helper {
+        display: none;
+        position: absolute;
+        background-color: var(--primary-color);
+        border-radius: 8px;
+        width: 50%;
+        height: 30%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0px 0px 10px 0px #000000;
+
+        .helper-element {
+            height: 80%;
+            width: 15%;
+            border-radius: 8px;
+            background-color: var(--secondary-color);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            svg {
+                fill: var(--primary-color);
+            }
+            p {
+                color: var(--primary-color);
+            }
+        }
+
+        .helper-wheel {
+            svg {
+                height: 30%;
+            }
+        }
+    }
+
+    .webgl {
+        // position: fixed;
+        height: 100%;
+        width: 90%;
+        outline: none;
+        // border: 1px solid red;
+    }
+
+    .side {
+        width: 10%;
+        height: 90%;
+        // background-color: pink;
+        // border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .settings-container {
+            height: 100%;
+            width: 50%;
+            background-color: var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px #000000;
+
+            .setting {
+                height: 3em;
+                width: 3em;
+                border-radius: 50%;
+                background-color: var(--secondary-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                svg {
+                    height: 2.3em;
+                    width: 2.3em;
+                    fill: var(--primary-color);
+                }
+            }
+        }
+    }
+}
